@@ -47,6 +47,9 @@ function Insights({ cards_data }) {
           width={card.width}
           height={card.height}
           quantity={card.quantity}
+          color={card.color}
+          thickness={card.thickness}
+          glass_type={card.glass_type}
         />
       ))}
     </Box>

@@ -7,7 +7,7 @@ import "@fontsource/roboto/500.css";
 import "@fontsource/roboto/700.css";
 import { colors, textStyles } from "../assets/styleconfig";
 
-function Cards({name, height, width, quantity}){
+function Cards({name, height, width, quantity, color, thickness, glass_type}){
     return (
         <Box
         backgroundColor={colors.tertiary}
@@ -43,6 +43,15 @@ function Cards({name, height, width, quantity}){
           </p>
           <p style={textStyles}>
             <b>QUANTIDADE:</b> {quantity}
+          </p>
+          <p style={textStyles}>
+            <b>COR:</b> {color}
+          </p>
+          <p style={textStyles}>
+            <b>ESPESSURA:</b> {thickness}
+          </p>
+          <p style={textStyles}>
+            <b>TIPO DE VIDRO:</b> {glass_type}
           </p>
         </Box>
       </Box>
